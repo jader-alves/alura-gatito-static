@@ -5,6 +5,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Servicos from './telas/Servicos';
 import Carrinho from './telas/Carrinho';
+import  { HomeScreen } from './telas/Home';
+import Camera from './telas/Camera';
+import VideoBook from './telas/VideoBook'
 
 import { cores } from './estilos';
 
@@ -32,9 +35,9 @@ export default function Rotas() {
           backgroundColor: cores.laranja 
         },
         keyboardHidesTabBar: true,
-      }}>
-      <Tab.Screen name="Serviços" component={Servicos} />
-      <Tab.Screen name="Carrinho" component={Carrinho} />
+      }}>      
+      <Tab.Screen name="Camera" component={Camera} />
+      <Tab.Screen name="VideoBook" component={VideoBook} />     
     </Tab.Navigator>
   </NavigationContainer>
 }
